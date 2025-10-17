@@ -24,8 +24,7 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
       with:
-        # <<<<<< CHANGE THIS to 9.0.x to match the missing assembly version 9.0.0.0 in the logs
-        dotnet-version: '9.0.x'
+        dotnet-version: '8.0.x'
         dotnet-quality: 'preview'
     #Build/Test/Publish the .net project
     - name: Build with dotnet
